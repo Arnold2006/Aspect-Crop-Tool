@@ -1,9 +1,7 @@
-
 module.exports = async (p) => {
-  console.log("Installing requirements...");
-  
-  // Install python dependencies via pip
+  console.log("Installing dependencies...");
+  // Install the python requirements using pip
   await p.install('requirements.txt', { pip: true });
-  
   console.log("Installation complete!");
 };
+
